@@ -25,11 +25,11 @@ Perfect Hashing on Persist Memory
 
 1.  mkdir build
 2.  cd build
-3.  cmake -DCMAKE_BUILD_TYPE=Release -DUSE_PMEM=ON .. or cmake -DCMAKE_BUILD_TYPE=Debug-DUSE_PMEM=ON ..
+3.  cmake -DCMAKE_BUILD_TYPE=Release -DUSE_PMEM=ON .. or cmake -DCMAKE_BUILD_TYPE=Debug -DUSE_PMEM=ON ..
 4.  make
 
 ### Excute
 
 1.  If successfully, you can get two executable files named 'EEPH' and 'ycsb_benchmark'. 'EEPH'  runs in Pibench, 'ycsb_benchmark' runs in YCSB datasets.
-2.  Except the executable files, '../build/run.sh' is a simple script for testing.
+2.  Except the executable files, '../script/run.sh' is a simple script for testing.
 3.  xxxx
