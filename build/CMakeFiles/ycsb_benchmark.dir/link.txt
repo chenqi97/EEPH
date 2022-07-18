@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wno-long-long -fPIC -march=native -g CMakeFiles/ycsb_benchmark.dir/main.cpp.o -o ycsb_benchmark   -L/home/cq/EEPH/build/pmdk/src/PMDK/src/debug  -Wl,-rpath,/home/cq/EEPH/build/pmdk/src/PMDK/src/debug -lpthread -lgflags -lpmemobj -lpmem 

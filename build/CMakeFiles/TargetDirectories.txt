@@ -1,0 +1,5 @@
+/home/cq/EEPH/build/CMakeFiles/ycsb_benchmark.dir
+/home/cq/EEPH/build/CMakeFiles/edit_cache.dir
+/home/cq/EEPH/build/CMakeFiles/PMDK.dir
+/home/cq/EEPH/build/CMakeFiles/rebuild_cache.dir
+/home/cq/EEPH/build/CMakeFiles/EEPH.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wno-long-long -fPIC -march=native -g CMakeFiles/EEPH.dir/test_pmem.cpp.o -o EEPH   -L/home/cq/EEPH/build/pmdk/src/PMDK/src/debug  -Wl,-rpath,/home/cq/EEPH/build/pmdk/src/PMDK/src/debug -lpthread -lgflags -lpmemobj -lpmem 

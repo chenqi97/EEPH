@@ -1,0 +1,623 @@
+a - ../nondebug/libpmem/libpmem_all.o
+a - ../debug/libpmem/libpmem_all.o
+checking for xsltproc... /usr/bin/xsltproc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler supports -I/home/cq/dash/build/pmdk/src/PMDK/src/common... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether pause instruction is compilable... yes
+checking whether SSE2 intrinsics is compilable... yes
+checking for ar... ar
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for TLS... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking for __builtin_clz... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... no
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/private_namespace.h commands
+config.status: executing include/jemalloc/internal/private_unnamespace.h commands
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/internal/size_classes.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 
+library revision   : 2
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -Werror -DSTRINGOP_TRUNCATION_SUPPORTED -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -std=gnu99 -pthread -DSRCVERSION="1.6+git703.g8cb972fe3" -DSDS_ENABLED -DNDCTL_GE_63 -I/home/cq/dash/build/pmdk/src/PMDK/src/common -I/home/cq/dash/build/pmdk/src/PMDK/src/common -fvisibility=hidden
+LDFLAGS            : -Wl,-z,relro -Wl,--fatal-warnings -Wl,-rpath=/usr/local/lib64:/usr/lib64:/usr/lib64
+EXTRA_LDFLAGS      : 
+LIBS               :  -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : /usr/bin/xsltproc
+XSLROOT            : /usr/share/sgml/docbook/xsl-stylesheets
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+abs_srcroot        : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+objroot            : 
+abs_objroot        : /home/cq/dash/build/pmdk/src/PMDK/src/nondebug/libvmem/jemalloc/
+
+JEMALLOC_PREFIX    : je_vmem_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_vmem_je_
+install_suffix     : 
+autogen            : 0
+cc-silence         : 1
+debug              : 0
+code-coverage      : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 1
+xmalloc            : 0
+munmap             : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+checking for xsltproc... /usr/bin/xsltproc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler supports -I/home/cq/dash/build/pmdk/src/PMDK/src/common... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether pause instruction is compilable... yes
+checking whether SSE2 intrinsics is compilable... yes
+checking for ar... ar
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking for __builtin_clz... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... no
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/private_namespace.h commands
+config.status: executing include/jemalloc/internal/private_unnamespace.h commands
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/internal/size_classes.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 
+library revision   : 2
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -Werror -DSTRINGOP_TRUNCATION_SUPPORTED -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -std=gnu99 -pthread -DSRCVERSION="1.6+git703.g8cb972fe3" -DSDS_ENABLED -DNDCTL_GE_63 -I/home/cq/dash/build/pmdk/src/PMDK/src/common -I/home/cq/dash/build/pmdk/src/PMDK/src/common -fvisibility=hidden
+LDFLAGS            : -Wl,-z,relro -Wl,--fatal-warnings -Wl,-rpath=/usr/local/lib64:/usr/lib64:/usr/lib64
+EXTRA_LDFLAGS      : 
+LIBS               :  -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : /usr/bin/xsltproc
+XSLROOT            : /usr/share/sgml/docbook/xsl-stylesheets
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+abs_srcroot        : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+objroot            : 
+abs_objroot        : /home/cq/dash/build/pmdk/src/PMDK/src/nondebug/libvmmalloc/jemalloc/
+
+JEMALLOC_PREFIX    : je_vmem_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_vmem_je_
+install_suffix     : 
+autogen            : 0
+cc-silence         : 1
+debug              : 0
+code-coverage      : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 1
+xmalloc            : 0
+munmap             : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+checking for xsltproc... /usr/bin/xsltproc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler supports -I/home/cq/dash/build/pmdk/src/PMDK/src/common... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether pause instruction is compilable... yes
+checking whether SSE2 intrinsics is compilable... yes
+checking for ar... ar
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for TLS... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking for __builtin_clz... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... no
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/private_namespace.h commands
+config.status: executing include/jemalloc/internal/private_unnamespace.h commands
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/internal/size_classes.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 
+library revision   : 2
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -Werror -DSTRINGOP_TRUNCATION_SUPPORTED -std=gnu99 -pthread -DSRCVERSION="1.6+git703.g8cb972fe3" -DSDS_ENABLED -DNDCTL_GE_63 -I/home/cq/dash/build/pmdk/src/PMDK/src/common -Wp,-U_FORTIFY_SOURCE -O0 -ggdb -DDEBUG -I/home/cq/dash/build/pmdk/src/PMDK/src/common -fvisibility=hidden
+LDFLAGS            : -Wl,-z,relro -Wl,--fatal-warnings -Wl,-rpath=/usr/local/lib64/pmdk_debug:/usr/lib64:/usr/lib64
+EXTRA_LDFLAGS      : 
+LIBS               :  -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : /usr/bin/xsltproc
+XSLROOT            : /usr/share/sgml/docbook/xsl-stylesheets
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+abs_srcroot        : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+objroot            : 
+abs_objroot        : /home/cq/dash/build/pmdk/src/PMDK/src/debug/libvmem/jemalloc/
+
+JEMALLOC_PREFIX    : je_vmem_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_vmem_je_
+install_suffix     : 
+autogen            : 0
+cc-silence         : 1
+debug              : 1
+code-coverage      : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 1
+xmalloc            : 0
+munmap             : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+checking for xsltproc... /usr/bin/xsltproc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler supports -I/home/cq/dash/build/pmdk/src/PMDK/src/common... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether pause instruction is compilable... yes
+checking whether SSE2 intrinsics is compilable... yes
+checking for ar... ar
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking for __builtin_clz... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... no
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/private_namespace.h commands
+config.status: executing include/jemalloc/internal/private_unnamespace.h commands
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/internal/size_classes.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 
+library revision   : 2
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -Werror -DSTRINGOP_TRUNCATION_SUPPORTED -std=gnu99 -pthread -DSRCVERSION="1.6+git703.g8cb972fe3" -DSDS_ENABLED -DNDCTL_GE_63 -I/home/cq/dash/build/pmdk/src/PMDK/src/common -Wp,-U_FORTIFY_SOURCE -O0 -ggdb -DDEBUG -I/home/cq/dash/build/pmdk/src/PMDK/src/common -fvisibility=hidden
+LDFLAGS            : -Wl,-z,relro -Wl,--fatal-warnings -Wl,-rpath=/usr/local/lib64/pmdk_debug:/usr/lib64:/usr/lib64
+EXTRA_LDFLAGS      : 
+LIBS               :  -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : /usr/bin/xsltproc
+XSLROOT            : /usr/share/sgml/docbook/xsl-stylesheets
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+abs_srcroot        : /home/cq/dash/build/pmdk/src/PMDK/src/jemalloc/
+objroot            : 
+abs_objroot        : /home/cq/dash/build/pmdk/src/PMDK/src/debug/libvmmalloc/jemalloc/
+
+JEMALLOC_PREFIX    : je_vmem_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_vmem_je_
+install_suffix     : 
+autogen            : 0
+cc-silence         : 1
+debug              : 1
+code-coverage      : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 1
+xmalloc            : 0
+munmap             : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+a - ../nondebug/libvmem/libvmem_all.o
+a - ../debug/libvmem/libvmem_all.o
+a - ../nondebug/libpmemblk/libpmemblk_all.o
+a - ../debug/libpmemblk/libpmemblk_all.o
+a - ../nondebug/libpmemlog/libpmemlog_all.o
+a - ../debug/libpmemlog/libpmemlog_all.o
+a - ../nondebug/libpmemobj/libpmemobj_all.o
+a - ../debug/libpmemobj/libpmemobj_all.o
+a - ../nondebug/libpmempool/libpmempool_all.o
+a - ../debug/libpmempool/libpmempool_all.o
+a - ../nondebug/libvmmalloc/libvmmalloc_all.o
+a - ../debug/libvmmalloc/libvmmalloc_all.o
+a - ../nondebug/common/libpmemcommon_all.o
+a - ../debug/common/libpmemcommon_all.o
+NOTE: Skipping rpmemd because libfabric (version >= 1.4.2) is missing -- see src/librpmem/README for details
+NOTE: Skipping librpmem because libfabric (version >= 1.4.2) is missing -- see src/librpmem/README for details
+NOTE: Skipping librpmem because libfabric (version >= 1.4.2) is missing -- see src/librpmem/README for details
+NOTE: Skipping librpmem examples because libfabric (version >= 1.4.2) is missing -- see src/librpmem/README for details
+a - libctree_map.o
+a - libhashmap_tx.o
+a - librtree_map.o
+a - libhashmap_atomic.o
+a - libslab_allocator.o
+a - libskiplist_map.o
+a - libart.o
+a - libbtree_map.o
+a - libhashmap_rp.o
+a - librbtree_map.o
+NOTE: Skipping kv_server because libuv is missing -- see src/examples/libpmemobj/map/README for details.
+a - libart.o
+a - libmap_btree.o
+a - libmap_skiplist.o
+a - libmap_rbtree.o
+a - libmap_hashmap_atomic.o
+a - libmap_ctree.o
+a - libmap_rtree.o
+a - libmap_hashmap_tx.o
+a - libmap_hashmap_rp.o
+a - libmap.o
+NOTE: Skipping pmemobjfs because fuse (version >= 2.9.1) is missing -- see src/examples/libpmemobj/pmemobjfs/README for details.
+NOTE: Skipping librpmem benchmark because libfabric (version >= 1.4.2) is missing -- see src/librpmem/README for details
