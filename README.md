@@ -33,3 +33,6 @@ Perfect Hashing on Persist Memory
 1.  If successfully, you can get two executable files named 'EEPH' and 'ycsb_benchmark'. 'EEPH'  runs in Pibench, 'ycsb_benchmark' runs in YCSB datasets.
 2.  Except the executable files, '../script/run.sh' is a simple script for testing.
 3.  xxxx
+
+### Structure
+We have included three comparison hash indexes(Dash, CCEH, and Level) in this project, whose header file is in the folder with the same name. For Dash-hybrid and CCEH-hybrid version, you can set "DASH_HYBRID" (lines 87 in ex_finger.h) or "CCEH_HYBRID" (lines 41 in CCEH.h) in the source code. EEPH.h is the header file of our proposal. You can download the header files in your codes for testing. Also, you can check the implements of algorithm mentioned in paper (Section IV): complement move (impemented in function "is_movable"), local rehashing (implemented in function "rehash_a_cell"), and extension (implemented in function "dynamic_extension").
